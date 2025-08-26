@@ -1,0 +1,13 @@
+/* Styles for the container of the cards */
+.card-container {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow cards to wrap to the next row */
+  justify-content: space-around; /* Distribute space around items */
+  padding: 10px; /* Add some padding around the container */
+}
+
+/* Styles for individual Material cards */
+mat-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Apply box shadow */
+  flex-basis: calc(33% - 20px); /* Set basis for three cards per row with spacing */
+}

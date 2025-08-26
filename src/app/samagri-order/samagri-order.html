@@ -1,0 +1,17 @@
+<div class="card-container">
+@for (product of samagriProducts(); track product.id) {
+  <mat-card>
+
+    <img mat-card-image [src]="product.imageUrl" alt="{{ product.name }}" width="200" height="200" priority>
+    <mat-card-content>
+      <h3>{{ product.name }}</h3>
+      <p>{{ product.description }}</p>
+      <p>Price: ${{ product.price }}</p>
+      <div class="quantity-control">
+        <label for="quantity-{{ product.id }}">Quantity:</label>
+        <input id="quantity-{{ product.id }}" type="number" min="0" value="0">
+      </div>
+    </mat-card-content>
+  </mat-card>
+}
+</div>

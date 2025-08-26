@@ -1,0 +1,10 @@
+:host {
+  background-color: #5c5cb0;
+  color: white;
+  text-align: center;
+  padding: 10px 0; /* Add padding top/bottom */
+  position: fixed; /* Make the footer fixed */
+  bottom: 0; /* Position it at the bottom */
+  width: 100%; /* Make it span the full width */
+  z-index: 100; /* Ensure footer is above other content */
+}

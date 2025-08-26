@@ -1,0 +1,18 @@
+<h2>Available Pooja Services</h2>
+<div class="card-container">
+
+@for (product of poojaServices(); track product.name) {
+  <mat-card>
+    <img mat-card-image [src]="product.imageUrl" alt="{{ product.name }}" width="200" height="200" priority>
+    <mat-card-content>
+      <h3>{{ product.name }}</h3>
+      <p>{{ product.details }}</p>
+      <p>Price: ${{ product.price }}</p>
+      <div>
+        <!-- <label for="quantity-{{ product.id }}">Quantity:</label>
+        <input id="quantity-{{ product.id }}" type="number" min="0" value="0"> -->
+      </div>
+    </mat-card-content>
+  </mat-card>
+}
+</div>

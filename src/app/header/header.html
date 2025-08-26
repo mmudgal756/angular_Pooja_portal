@@ -1,0 +1,19 @@
+<mat-toolbar>
+  <div class="logo">
+    <a [routerLink]="'/'"><img src="https://www.gstatic.com/monospace/231115/logo_angular.svg" alt="Angular Logo"></a>
+  </div>
+  <button mat-button color="primary" [routerLink]="'/samagri-order'">Order Samagri</button>
+
+  <button mat-icon-button [matMenuTriggerFor]="userMenu" aria-label="User menu">
+    <mat-icon>account_circle</mat-icon>
+  </button>
+  <mat-menu #userMenu="matMenu">
+    <button mat-menu-item disabled>
+      <span>Username</span>
+    </button>
+    <button mat-menu-item>
+      <span>Logout</span>
+    </button>
+  </mat-menu>
+
+</mat-toolbar>

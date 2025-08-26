@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%;
+  margin: 0; /* Add this to remove default body margin */
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #F0F8FF;
+  font-family: 'PT Sans', sans-serif;
+}
+
+mat-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.container-main {
+  margin: 2rem;
+  margin-bottom: 15rem;
+}
+

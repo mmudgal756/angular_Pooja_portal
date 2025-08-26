@@ -1,11 +1,16 @@
-import { Component, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Footer } from './footer/footer';
+import { Header } from './header/header';
+import { SamagriOrderComponent } from './samagri-order/samagri-order';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [RouterOutlet, Header, Footer],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class App {
   protected readonly title = signal('myapp');
